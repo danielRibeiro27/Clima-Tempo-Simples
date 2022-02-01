@@ -1,0 +1,52 @@
+﻿/* 
+    CSS que define o visual das boxes  da tela principal
+*/
+
+
+.small-box {
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+.main-div-top3 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.title-top3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+
+
+.div-previsao-clima {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.cidade-top-3 {
+    width: 100%; 
+    text-align:left;
+}
+
+.previsao-clima-header {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.previsao-clima-card {
+    width: 100%;
+    text-align: center
+}
+
+.main-box {
+    border-width: 1px;
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-radius: 3px;
+    width: 50%;
+    margin: 10px;
+}

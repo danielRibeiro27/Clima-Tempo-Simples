@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Clima";
+}
+
+<link href="~/Content/main.css" rel="stylesheet" />
+
+<div class="jumbotron">
+    <h1>Clima tempo simples</h1>
+</div>
+
+<section>
+    <div class="main-div-top3">
+        <div class="main-box">
+            <div class="small-box">
+                <div class="title-top3">Cidades mais quentes hoje</div>
+            </div>
+            <div>
+                @foreach (PrevisaoClima previsao in ViewBag.Top3HotestCitys)
+                {
+                    <div class="cidade-top-3" >@(previsao.Cidade.Nome)     Min:@(previsao.TemperaturaMinima) 	Max:@(previsao.TemperaturaMaxima)</div>
+                }
+            </div>
+        </div>
+        <div class="main-box">
+            <div class="small-box">
+                <div class="title-top3" >Cidades mais frias hoje</div>
+            </div>
+            <div>
+                @foreach (PrevisaoClima previsao in ViewBag.Top3ColdestCitys)
+                {
+                    <div class="cidade-top-3" >@(previsao.Cidade.Nome)     Min:@(previsao.TemperaturaMinima) 	Max:@(previsao.TemperaturaMaxima)</div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Select2 implemetnado no .JS -->
+<select id="select-cidades">
+    <option selected value="">Selecione uma cidade :)</option>
+
+    @foreach (Cidade city in ViewBag.cidades)
+    {
+        <option value="@city.Id">@city.Nome</option>
+    }
+</select>
+
+
+<section>
+    <div id="info" class="div-previsao-clima">
+
+
+    </div>
+</section>
+
