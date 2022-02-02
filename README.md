@@ -14,6 +14,6 @@ Instruções para uso:
 Também adicionei .:
 - Arquitetura DDD e padrão Repository
 - Select2
-- Stored Procedures pra gerar o banco de testes
+- Stored Procedures pra gerar o dados para de teste
 - JQuery e Ajax
 - Unity para DI
